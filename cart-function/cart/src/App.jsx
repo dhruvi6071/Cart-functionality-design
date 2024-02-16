@@ -68,7 +68,7 @@ function App() {
   }
 
   return (
-    <Cartcontext.Provider>
+    <Cartcontext.Provider value={{items: []}}>
       <Header
         cart={shoppingCart}
         onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
